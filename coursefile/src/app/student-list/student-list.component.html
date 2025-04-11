@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Department of _____</h2>
+  
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Student Name</th>
+          <th>Register Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic rows will be added here -->
+      </tbody>
+    </table>
+  
+    <button (click)="addRow()">Add Student</button>
+  
+    <div class="footer">
+      <p>
+        Prepared by: 
+        <input type="text" [(ngModel)]="preparedBy" placeholder="Enter name"/>
+      </p>
+      <p>
+        Approved by: 
+        <input type="text" [(ngModel)]="approvedBy" placeholder="Enter name"/>
+      </p>
+    </div>
+  </div>
+  

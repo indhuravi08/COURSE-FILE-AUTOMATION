@@ -1,0 +1,47 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 250px;
+  background-color: #f4f4f4;
+}
+
+.sidenav-header {
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(45deg, #3f51b5, #5c6bc0);
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card mat-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+mat-toolbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+mat-card-header mat-icon {
+  font-size: 36px;
+  color: #3f51b5;
+}
+
+/* Hover effect for the dashboard link */
+.dashboard-link {
+  color: black; /* Default text color */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.dashboard-link:hover {
+  color: #007bff; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+}

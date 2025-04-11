@@ -1,0 +1,73 @@
+/* Import Google Fonts at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans&family=Roboto:400,700&display=swap');
+
+/* Container styling */
+.pt1-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    background-color: #f4f9f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.pt1-title {
+    text-align: center;
+    color: #28a745;
+    font-family: 'Product Sans', 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* List styling */
+.pt1-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pt1-list-item {
+    margin: 10px 0;
+}
+
+/* Link styling */
+.pt1-list-item a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #e9f7ef;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.pt1-list-item a:hover {
+    background-color: #28a745;
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.pt1-list-item a:active {
+    background-color: #1e7e34;
+    color: #e9f7ef;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .pt1-container {
+        padding: 15px;
+    }
+
+    .pt1-title {
+        font-size: 20px;
+    }
+
+    .pt1-list-item a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

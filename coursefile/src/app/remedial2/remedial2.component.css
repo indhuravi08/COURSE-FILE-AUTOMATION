@@ -1,0 +1,56 @@
+/* Center the content */
+.remedial2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+.remedial2-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling the list */
+.remedial2-list {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Individual link styles */
+.remedial2-list-item {
+    margin: 10px 0;
+}
+
+.remedial2-list-item a {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the links */
+.remedial2-list-item a:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Add some spacing between the list items */
+.remedial2-list-item:not(:last-child) {
+    margin-bottom: 15px;
+}

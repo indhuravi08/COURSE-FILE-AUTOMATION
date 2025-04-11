@@ -1,0 +1,61 @@
+/* Container styling */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h2 {
+  text-align: center;
+  color: #007bff;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Exam list styling */
+.exam-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Buttons styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #003d80;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}

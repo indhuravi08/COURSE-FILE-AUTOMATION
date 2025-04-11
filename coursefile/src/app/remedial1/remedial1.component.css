@@ -1,0 +1,64 @@
+/* Center the content both vertically and horizontally */
+.remedial1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header styles */
+.remedial1-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling the list */
+.remedial1-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Individual link styles */
+.remedial1-list-item {
+    margin: 10px 0;
+}
+
+.remedial1-list-item a {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the links */
+.remedial1-list-item a:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Ensure spacing between items */
+.remedial1-list-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* Fixing the width and centering list items */
+.remedial1-list-item a {
+    width: 100%;
+    max-width: 400px; /* Constrain the width of the boxes */
+    margin: 0 auto; /* Center the boxes horizontally */
+}

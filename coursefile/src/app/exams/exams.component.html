@@ -1,0 +1,9 @@
+<div class="container">
+ 
+  
+  <!-- New Dynamic Exam List Section -->
+  <h2>Exams</h2>
+  <div class="exam-list">
+    <button *ngFor="let exam of exams" (click)="navigateToExam(exam)">{{ exam }}</button>
+  </div>
+</div>

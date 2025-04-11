@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" mode="side" opened>
+    <mat-toolbar class="sidenav-header">
+      <mat-icon>menu_book</mat-icon> Course File Automation
+    </mat-toolbar>
+    <mat-nav-list>
+      <!-- Add Dashboard Link Here -->
+      <a mat-list-item routerLink="/dashboard" class="dashboard-link">
+        <mat-icon>dashboard</mat-icon>
+        Dashboard
+      </a>
+      <a mat-list-item routerLink="/vision-mission">
+        <mat-icon>school</mat-icon>
+        Vision & Mission
+      </a>
+      <a mat-list-item routerLink="/peo">
+        <mat-icon>description</mat-icon>
+        PEO
+      </a>
+      <a mat-list-item routerLink="/po">
+        <mat-icon>check_circle</mat-icon>
+        PO
+      </a>
+      <a mat-list-item routerLink="/pso">
+        <mat-icon>star</mat-icon>
+        PSO
+      </a>
+      <a mat-list-item routerLink="/lesson-plan">
+        <mat-icon>library_books</mat-icon>
+        Lesson Plan
+      </a>
+      <a mat-list-item routerLink="/student-list">
+        <mat-icon>group</mat-icon>
+        Student List
+      </a>
+      <a mat-list-item routerLink="/exams">
+        <mat-icon>assignment</mat-icon>
+        Exams
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+      Course File Automation Dashboard
+    </mat-toolbar>
+
+    <div class="dashboard-content">
+      <div class="card" *ngFor="let item of dashboardItems">
+        <mat-card>
+          <mat-card-header>
+            <mat-icon>{{ item.icon }}</mat-icon>
+            <mat-card-title>{{ item.title }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            {{ item.description }}
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="primary" [routerLink]="item.link">View</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
